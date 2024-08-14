@@ -1078,7 +1078,6 @@ main {
 
 .resume-download-btn {
   background-color: #28a745;
-  /* Green color */
   color: white;
   padding: 10px 20px;
   text-align: center;
@@ -1095,6 +1094,26 @@ main {
   background-color: #218838;
   /* Darker green color on hover */
 }
+
+.arrow-button {
+  width: 0;
+  height: 0;
+  border-top: 20px solid transparent;
+  border-bottom: 20px solid transparent;
+  border-left: 30px solid orange;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  border-radius: 2px;
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
 
 
 
