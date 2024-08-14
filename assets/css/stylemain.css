@@ -869,9 +869,9 @@ main {
 
 .organization-list {
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
-  gap: 0px;
+  gap: 5px;
   margin: 0 -10px;
   padding: 25px;
   padding-bottom: 25px;
@@ -883,6 +883,8 @@ main {
 }
 
 .organization-item {
+  flex-basis: calc(33.33% - 10px);
+  /* Distribute space evenly with reduced gap */
   min-width: 30%;
   scroll-snap-align: start;
   text-align: center;
@@ -890,7 +892,7 @@ main {
 }
 
 .organization-item img {
-  width: 250px;
+  width: 240px;
   height: 220px;
   filter: grayscale(1);
   transition: var(--transition-1);
